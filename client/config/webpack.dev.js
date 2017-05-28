@@ -15,6 +15,10 @@ const DEVELOPMENT_CONFIG = {
     ]
   },
 
+  output: {
+    publicPath: 'http://localhost:9001/assets/'
+  },
+
   cache: true,
 
   devServer: {
@@ -29,10 +33,6 @@ const DEVELOPMENT_CONFIG = {
       chunks: false,
       children: false
     }
-  },
-
-  output: {
-    publicPath: '/'
   },
 
   plugins: [

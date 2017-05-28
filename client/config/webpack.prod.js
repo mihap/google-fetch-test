@@ -19,6 +19,7 @@ const PRODUCTION_CONFIG = {
 
   output: {
     path:           DIST_PATH,
+    publicPath:     '/assets/',
     filename:       '[name]-[chunkhash].bundle.js',
     chunkFilename:  '[id]-[chunkhash].bundle.js'
   },

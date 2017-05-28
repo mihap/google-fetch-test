@@ -8,7 +8,8 @@
   "scripts": {
     "start": "env NODE_ENV=development webpack-dev-server --progress --colors",
     "build": "rimraf dist && env NODE_ENV=production webpack  --colors && cp ./dist/* ../public/assets/",
-    "stats": "env NODE_ENV=production webpack --profile --json > webpack-stats.json"
+    "stats": "env NODE_ENV=production webpack --profile --json > webpack-stats.json",
+    "heroku-postbuild": "yarn run build"
   },
   "keywords": [
     "webpack v2",

@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "env NODE_ENV=development webpack-dev-server --progress --colors",
-    "build": "rimraf dist && env NODE_ENV=production webpack  --colors",
+    "build": "rimraf dist && env NODE_ENV=production webpack  --colors && cp ./dist/* ../public/assets/",
     "stats": "env NODE_ENV=production webpack --profile --json > webpack-stats.json"
   },
   "keywords": [
@@ -59,6 +59,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "chunk-manifest-webpack-plugin": "^1.1.0",
     "compression-webpack-plugin": "^0.4.0",
+    "cp": "^0.2.0",
     "css-loader": "^0.28.2",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",

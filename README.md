@@ -5,6 +5,8 @@ Rails + React playground for testing google crawler:
 https://www.google.com/webmasters/tools/googlebot-fetch
 
 
+includes latest versions of everything, react-router v4, code splitting and async load
+
 dev:
 
 rails s
@@ -21,5 +23,7 @@ demo: https://google-fetch-test.herokuapp.com
 
 
 additional links:
+
 client application starter: https://github.com/mihap/webpack-react-hot-bolerplate
+
 buildpack for heroku: https://github.com/EzovLabs/heroku-buildpack-nodejs

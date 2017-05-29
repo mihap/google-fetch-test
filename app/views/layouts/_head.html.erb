@@ -1,0 +1,6 @@
+<% if @client_application %>
+  <%= render partial: 'layouts/chunks_manifest' %>
+  <%= client_application_stylesheet_tag('client.css') %>
+<% else %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+<% end %>

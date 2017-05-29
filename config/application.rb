@@ -27,5 +27,11 @@ module GoogleFetchTest
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.client_application = {
+      use_manifest: false,
+      asset_manifest: {},
+      chunks_manifest: {}
+    }
   end
 end

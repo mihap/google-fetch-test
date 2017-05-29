@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails + React playground for testing google crawler:
 
-Things you may want to cover:
+https://www.google.com/webmasters/tools/googlebot-fetch
 
-* Ruby version
 
-* System dependencies
+dev:
 
-* Configuration
+rails s
+cd client; yarn start
 
-* Database creation
 
-* Database initialization
+prod:
 
-* How to run the test suite
+cd client; yarn build
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+demo: https://google-fetch-test.herokuapp.com
 
-* ...
+
+additional links:
+client application starter: https://github.com/mihap/webpack-react-hot-bolerplate
+buildpack for heroku: https://github.com/EzovLabs/heroku-buildpack-nodejs

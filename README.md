@@ -8,6 +8,7 @@ https://www.google.com/webmasters/tools/googlebot-fetch
 dev:
 
 rails s
+
 cd client; yarn start
 
 

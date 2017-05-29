@@ -1,4 +1,5 @@
 const webpack             = require('webpack');
+const path                = require('path');
 const ManifestPlugin      = require('webpack-manifest-plugin');
 const ChunkManifestPlugin = require('chunk-manifest-webpack-plugin');
 const ExtractTextPlugin   = require('extract-text-webpack-plugin');
@@ -20,8 +21,7 @@ const PRODUCTION_CONFIG = {
   output: {
     path:           DIST_PATH,
     publicPath:     '/assets/',
-    filename:       '[name]-[chunkhash].bundle.js',
-    chunkFilename:  '[id]-[chunkhash].bundle.js'
+    filename:       '[name]-[chunkhash].bundle.js'
   },
 
   module: {
@@ -46,13 +46,15 @@ const PRODUCTION_CONFIG = {
   },
 
   plugins: [
+    new webpack.HashedModuleIdsPlugin(),
+
     new webpack.LoaderOptionsPlugin({
       minimize: true,
       debug: false
     }),
 
     new ExtractTextPlugin({
-      filename: '[name]-[chunkhash].css',
+      filename: '[name]-[contenthash].css',
       disable: false,
       allChunks: true
     }),

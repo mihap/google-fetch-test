@@ -5,7 +5,7 @@ Rails + React playground for testing google crawler:
 https://www.google.com/webmasters/tools/googlebot-fetch
 
 
-includes latest versions of everything, react-router v4, code splitting and async load
+includes latest versions of everything, react-router v4, code splitting, async modules load and CloudFront assets hosting with dynamic publicPath
 
 dev:
 

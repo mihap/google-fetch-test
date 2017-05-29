@@ -4,6 +4,7 @@
     <title>GoogleFetchTest</title>
     <%= csrf_meta_tags %>
     <meta name="google-site-verification" content="<%= Rails.application.secrets[:google_site_verification] %>" />
+    <%= render partial: 'layouts/public_path' %>
     <%= render partial: 'layouts/head' %>
   </head>
 

@@ -1,0 +1,5 @@
+<% if @client_application %>
+  <script type="text/javascript" charset="utf-8">
+    window.publicPath = "<%= Rails.application.secrets[:asset_host] %>"
+  </script>
+<% end %>
